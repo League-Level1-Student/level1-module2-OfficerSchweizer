@@ -1,3 +1,5 @@
+import Kettle.Water;
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2017
  *    Level 1
@@ -6,7 +8,21 @@
 public class TeaMaker {
 
 	/* Figure out how to make a cup of tea using the classes below */
+	public static void main(String[] args) {
+		TeaBag teabag = new TeaBag("Green");
+		System.out.println("Teabag flavor = " + teabag.getFlavor());
 
+		Cup cup = new Cup();
+
+		Kettle kettle = new Kettle();
+
+		kettle.boil();
+
+		cup.makeTea(teabag, kettle.getWater());
+
+
+		
+	}
 }
 
 class TeaBag {
@@ -64,5 +80,3 @@ class Cup {
 	}
 
 }
-
-
