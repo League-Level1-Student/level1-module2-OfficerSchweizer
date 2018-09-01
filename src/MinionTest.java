@@ -1,13 +1,12 @@
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2018
  *    Level 1
  */
 
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-
 
 /*
 
@@ -34,6 +33,7 @@ This is because there is no Minion class in the package.
 
 public class MinionTest {
 
+
 	@Test
 	public void testConstructor() {
 		Minion stuart = new Minion("Stuart", 1, "yellow", "");
@@ -57,8 +57,40 @@ public class MinionTest {
 		stuart.setMaster("Napoleon");
 		assertEquals("Napoleon", stuart.getMaster());
 	}
-
 }
 
+class Minion {
 
+	private String name;
+	private int eyes;
+	private String color;
+	private String master;
 
+	public Minion(String name, int eyes, String color, String master) {
+		this.name = name;
+		this.eyes = eyes;
+		this.color = color;
+		this.master = master;
+
+	}
+
+void setMaster(String newMaster) {
+	master = newMaster;
+}
+
+	String getName() {
+		return this.name;
+	}
+
+	int getEyes() {
+		return this.eyes;
+	}
+
+	String getColor() {
+		return this.color;
+	}
+
+	String getMaster() {
+		return this.master;
+	}
+}
