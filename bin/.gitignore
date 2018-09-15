@@ -1,3 +1,4 @@
+/Bond.class
 /Cup.class
 /Kettle$Water.class
 /Kettle.class
@@ -10,9 +11,8 @@
 /Recipes.html
 /TeaBag.class
 /TeaMaker.class
+/Vault.class
+/VaultRunner.class
 /asdf.class
 /asdfrunner.class
 /extra/
-/Vault.class
-/VaultRunner.class
-/Bond.class
